@@ -5,5 +5,7 @@ My goal is to practice git at the command line by adding, updating, and organizi
 
 Eventually will serve as a table of contents for the respository
 
+[pset0](CS50-2018/pset0)
+
 
 -- Under Construction
