@@ -1,0 +1,63 @@
+/*** Header, Navbar ***/
+.navbar{
+    background-color: #F19F4D;
+}
+
+.navbar-brand, h1{
+    font-family: 'Lobster', Georgia, Times, serif;
+    font-weight: bold;
+}
+
+.navbar-text, nav-link, h3, p, alert, flash{
+    font-family: 'Cabin', Helvetica, Arial, sans-serif;
+}
+
+.nav-link{
+    float: right;
+}
+
+
+/*** Main Content ***/
+/* Page Background */
+html, main{
+    background-color: #D9D9D9;
+}
+
+/* Text about project */
+p{
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    padding: 1em;
+}
+
+/*** Wrappers ***/
+#calendar{
+    background-color: #f0f8ff;
+    width: 80%;
+    margin: auto;
+    font-family: 'Cabin', Helvetica, Arial, sans-serif;
+}
+
+/* Alert Messages */
+#flash{
+    background-color: #FFB2B2;
+    width: 50%;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+}
+.container{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.register{
+    width: 50%;
+    float: left;
+}
+
+.login{
+    width: 50%;
+    float: right;
+}

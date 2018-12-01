@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<!-- FullCalendar goes inside this div -->
+    <div id="calendar">
+
+        <!-- Modal when calendar is selected, create title and timeframe for event -->
+        <div id="selectModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <h4 id="modalTitle" class="modal-title">Add event</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
+
+                    <!-- Field for title-->
+                    <div id="modalBody" class="modal-body">
+
+                        <!-- In line, need to put input below label -->
+                        <div class='form-group'>
+                            <label><strong>Event Title</strong></label>
+                            <input type="text" id="selectName" placeholder="Title"/>
+                        </div>
+
+                        <!-- Hidden input to access startTime and endTime values with Submit function -->
+                        <input type='hidden' id='startTime'/>
+                        <input type='hidden' id='endTime'/>
+
+                        <div class='form-group'>
+                            <label><strong>Event Duration</strong></label>
+                            <p id='eventTime'></p>
+                        </div>
+
+                    </div>
+
+                    <!-- Have color options at some point -->
+                    <div class="modal-footer">
+
+                        <!-- buttons to make/remove event -->
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" id="selectCreate">Create</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal when event is selected, create option to rename event-->
+        <div id="eventModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <!-- Current title of event -->
+                        <h4 id="modalTitle" class="modal-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
+
+                    <!-- Field for re-naming-->
+                    <div id="modalBody" class="modal-body">
+
+                        <input type="text" id="eventName" placeholder="Rename"/>
+
+                    </div>
+
+                    <!-- Hidden input to store event._id value in modal -->
+                    <input type="hidden" id="eventId"/>
+
+                    <!-- Have color options at some point -->
+                    <div class="modal-footer">
+
+                        <!-- buttons to make/remove event -->
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger" id="removeEvent">Remove Event</button>
+
+                        <!-- Need to implement Rename functions -->
+                        <button type="button" class="btn btn-primary" id="updateEvent">Save Changes</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

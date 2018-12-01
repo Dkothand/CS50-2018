@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table style="width:100%">
+        <tr>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Transaction</th>
+        </tr>
+        {% for stock in stocks %}
+        <tr>
+            <td>{{stock.symbol}}</td>
+            <td>{{stock.shares}}</td>
+            <!-- Color coding money gained/lost -->
+            {% if stock.shares < 0 %}
+                <td style="color:green">{{stock.price | usd}}</td>
+            {% else %}
+                <td style="color:red">({{stock.price | usd}})</td>
+            {% endif %}
+            <td>{{stock.transaction}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
