@@ -1,0 +1,5 @@
+Problem Set 1: https://docs.cs50.net/2018/x/psets/1/pset1.html
+
+- Implement hello
+- Implement mario
+- Implement cash or credit
