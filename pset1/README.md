@@ -1,5 +1,5 @@
-Problem Set 1: https://docs.cs50.net/2018/x/psets/1/pset1.html
+Problem Set 1: [C](https://docs.cs50.net/2018/x/psets/1/pset1.html)
 
-- Implement hello
-- Implement mario
-- Implement cash or credit
+- Implement Hello
+- Implement Mario
+- Implement Cash or Credit

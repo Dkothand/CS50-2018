@@ -1,18 +1,16 @@
--- Under Construction --
+# CS50: Harvard's Introduction to Computer Science
 
-This the the readme for my cs50 problem set and final project.
+My solutions to the problem sets for CS50 2018; with final project included.
 
-My goal is to practice git at the command line by adding, updating, and organizing my problem sets and project.
+### Problem Set's
 
-# Contents:
-
-* [pset0](pset0)
-* [pset1](pset1)
-* [pset2](pset2)
-* [pset3](pset3)
-* [pset4](pset4)
-* [pset5](pset5)
-* [pset6](pset6)
-* [pset7](pset7)
-* [pset8](pset8)
+* [Problem Set 0](pset0)
+* [Problem Set 1](pset1)
+* [Problem Set 2](pset2)
+* [Problem Set 3](pset3)
+* [Problem Set 4](pset4)
+* [Problem Set 5](pset5)
+* [Problem Set 6](pset6)
+* [Problem Set 7](pset7)
+* [Problem Set 8](pset8)
 * [Final Project](project)
